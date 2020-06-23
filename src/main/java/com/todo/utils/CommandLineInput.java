@@ -5,6 +5,7 @@ public enum CommandLineInput {
 	UPDATE('u'),
 	DELETE('d'),
 	EXIT('e'),
+	SHOW('s'),
 	DEFAULT('\u0000');
 	private final char c;
 	private CommandLineInput(char c){
@@ -18,6 +19,7 @@ public enum CommandLineInput {
 		else if(c == 'u') return UPDATE;
 		else if(c == 'd') return DELETE;
 		else if(c == 'e') return EXIT;
+		else if(c == 's') return SHOW;
 		else return DEFAULT;
 	}
 }
